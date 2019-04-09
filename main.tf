@@ -120,6 +120,7 @@ data "aws_iam_policy_document" "permissions" {
       "ssm:GetParameters",
       "ssm:PutParameter",
       "cloudformation:DescribeStacks",
+      "cloudformation:DescribeStackResource",
     ]
 
     effect = "Allow"
