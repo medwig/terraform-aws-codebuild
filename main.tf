@@ -121,6 +121,7 @@ data "aws_iam_policy_document" "permissions" {
       "ssm:PutParameter",
       "cloudformation:DescribeStacks",
       "cloudformation:DescribeStackResource",
+      "lambda:PublishLayerVersion"
     ]
 
     effect = "Allow"
