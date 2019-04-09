@@ -119,6 +119,7 @@ data "aws_iam_policy_document" "permissions" {
       "logs:PutLogEvents",
       "ssm:GetParameters",
       "ssm:PutParameter",
+      "cloudformation:DescribeStacks",
     ]
 
     effect = "Allow"
