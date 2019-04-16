@@ -121,7 +121,12 @@ data "aws_iam_policy_document" "permissions" {
       "ssm:PutParameter",
       "cloudformation:DescribeStacks",
       "cloudformation:DescribeStackResource",
-      "lambda:PublishLayerVersion"
+      "lambda:PublishLayerVersion",
+      "s3:GetBucketLocation",
+      "s3:GetBucketVersioning",
+      "s3:GetObject",
+      "s3:GetObjectVersion",
+      "s3:ListBucket",
     ]
 
     effect = "Allow"
