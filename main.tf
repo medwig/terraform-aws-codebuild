@@ -130,6 +130,7 @@ data "aws_iam_policy_document" "permissions" {
       "dynamodb:GetItem",
       "dynamodb:PutItem",
       "dynamodb:DeleteItem",
+      "sts:AssumeRole",
     ]
 
     effect = "Allow"
